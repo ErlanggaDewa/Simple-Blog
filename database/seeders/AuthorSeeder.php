@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Post;
+use App\Models\Author;
 use Illuminate\Database\Seeder;
 
-class PostSeeder extends Seeder
+class AuthorSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class PostSeeder extends Seeder
     public function run()
     {
         //
-        Post::factory(10)->create();
+        Author::factory(10)->create();
     }
 }

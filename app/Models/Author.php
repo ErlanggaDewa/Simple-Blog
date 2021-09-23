@@ -6,13 +6,12 @@ use App\Models\Post;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Category extends Model
+class Author extends Model
 {
     use HasFactory;
-
     protected $guarded = ['id'];
 
-    public function posts()
+    public function post()
     {
         return $this->hasMany(Post::class);
     }

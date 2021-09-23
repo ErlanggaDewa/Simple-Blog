@@ -2,7 +2,7 @@
 
 @section('container')
     <article class="mt-3 ">
-        @foreach ($post as $data)
+        @foreach ($posts as $data)
 
             <a href="/posts/{{ $data->slug }}">
                 <h1>{{ $data->title }}</h1>
